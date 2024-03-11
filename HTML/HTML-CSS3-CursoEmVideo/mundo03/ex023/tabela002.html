@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tabelas</title>
+    <style>
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+        }
+        table {
+            width: 500px;
+            position: relative;
+        }
+        td, th {
+            height: 50px;
+            border: 1px solid black;
+            padding: 5px;
+        }
+        thead, tfoot {
+            background-color: gray;
+            color: white;
+        }
+        thead > tr > th {
+            position: sticky;
+            top: -1px;
+            background-color: gray;
+        }
+        .num {
+            text-align: right;
+        }tbody > tr:nth-child(odd) { /* Ou no lugar de odd(impar) posso usar 2n-1 */
+            background-color: white;
+        }
+        tbody > tr:nth-child(even) { /* Ou no lugar de even(par) posso usar 2n */
+            background-color: lightgray;
+        }
+        caption { 
+            font-size: 1.5em;
+            font-weight: bold;
+            padding: 5px;
+            background-color: lightgray;
+        }
+    </style>
+</head>
+<body>
+    <h1>Uso de tabelas grandes</h1>
+    <!--
+        Anatomia para tabelas grandes
+        TABLE
+            CAPTION
+            THEAD
+                TR, TD, TH
+            TBODY
+                TR, TD, TH
+            TFOOT
+                TR, TD, TH
+    -->
+    <table>
+        <caption>População das unidades federativas</caption>
+        <thead>
+            <tr>
+                <th scope="col">Estado</th>
+                <th scope="col">População</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>São Paulo</td>
+                <td class="num">41 262 199</td>
+            </tr>
+            <tr>
+                <td>Minas Gerais</td>
+                <td class="num">19 597 330</td>
+            </tr>
+            <tr>
+                <td>Rio de Janeiro</td>
+                <td class="num">15 989 929</td>
+            </tr>
+            <tr>
+                <td>Bahia</td>
+                <td class="num">14 016 906</td>
+            </tr>
+            <tr>
+                <td>Paraná</td>
+                <td class="num">10 444 526</td>
+            </tr>
+            <tr>
+                <td>Rio Grande do Sul</td>
+                <td class="num">10 693 929</td>
+            </tr>
+            <tr>
+                <td>Pernambuco</td>
+                <td class="num">8 796 448</td>
+            </tr>
+            <tr>
+                <td>Ceará</td>
+                <td class="num">8 452 381</td>
+            </tr>
+            <tr>
+                <td>Pará</td>
+                <td class="num">7 581 051</td>
+            </tr>
+            <tr>
+                <td>Santa Catarina</td>
+                <td class="num">6 248 436</td>
+            </tr>
+            <tr>
+                <td>Goiás</td>
+                <td class="num">6 003 788</td>
+            </tr>
+            <tr>
+                <td>Maranhão</td>
+                <td class="num">6 574 789</td>
+            </tr>
+            <tr>
+                <td>Espírito Santo</td>
+                <td class="num">3 514 952</td>
+            </tr>
+            <tr>
+                <td>Paraíba</td>
+                <td class="num">3 766 528	</td>
+            </tr>
+            <tr>
+                <td>Amazonas</td>
+                <td class="num">3 483 985</td>
+            </tr>
+        </tbody>
+        <tfoot>
+            <tr>
+                <th scope="row">Total de habitantes</th>
+                <td class="num"><strong>9999999999</strong></td>
+            </tr>
+        </tfoot>
+    </table>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellat est minus ea nostrum corrupti laudantium, ut atque vel itaque et hic pariatur sunt. Culpa voluptate soluta dolorem, praesentium consequatur ducimus.</p>
+    <p>Voluptate ea possimus beatae minus eum pariatur molestiae sint sequi reiciendis exercitationem accusamus iure, praesentium perspiciatis mollitia veritatis officia, autem esse labore nulla laudantium ipsum eos. Architecto atque porro explicabo!</p>
+    <p>Placeat ipsum facere dolorem dolore rerum quos officiis accusantium error deserunt alias non suscipit velit saepe recusandae optio neque, totam architecto ad quia cum. In illo laborum adipisci et atque.</p>
+    <p>Tenetur numquam quibusdam similique ipsam molestiae repellat alias harum, aliquid accusantium doloribus eum aliquam dolorem optio eveniet voluptatibus unde voluptate aperiam consectetur incidunt illo! Eius ducimus esse at blanditiis voluptatum.</p>
+    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Nam quod, iste doloribus facilis quibusdam aliquid exercitationem minima officia architecto unde dolorum veritatis aliquam neque fuga et vel praesentium ad accusamus.</p>
+    <p>Ipsa impedit nulla a iusto, perspiciatis blanditiis eligendi pariatur perferendis reiciendis ducimus officiis quis inventore doloremque cupiditate eos commodi repellat? Quidem consequatur qui blanditiis vero vel nisi accusamus aspernatur provident.</p>
+    <p>Deserunt illo officia facere, obcaecati quaerat enim maxime, numquam eum autem debitis modi. Voluptatum quae consequuntur ut sequi nam vero quis similique non laboriosam, delectus accusantium a sit enim? Exercitationem!</p>
+    <p>Possimus inventore omnis similique. Asperiores, quae! Necessitatibus possimus perferendis iste est impedit numquam consectetur facere quasi error iusto maxime laboriosam, doloribus ullam, eaque similique aut atque cumque eveniet suscipit! Eum.</p>
+    <p>Laborum obcaecati harum aut repudiandae reprehenderit illum ex praesentium eius reiciendis esse impedit minima ducimus ratione odit nobis quidem, eligendi temporibus itaque, quaerat nemo. Cumque impedit velit quaerat optio hic!</p>
+</body>
+</html>
