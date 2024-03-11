@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grouping-tags</title>
+    <style>
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+            background-color: gray;
+        }
+        h1 {
+            box-shadow: 5px 1px 14px 0px rgba(0, 0, 0, 0.479);
+        }
+        header {
+            background-color: white;
+            padding: 10px;
+            margin: 10px;
+            border-radius: 8% 0%;
+        }
+        main {
+            background-color: white;
+            padding: 10px;
+            margin: 10px;
+            border-radius: 8% 0%;
+        }
+        article {
+            background-color: lightgray;
+        }
+        article > aside {
+            background-color: rgb(161, 161, 161);
+            text-shadow: 1px 1px 10px rgb(121, 0, 0);
+        }
+        nav {
+            background-color: rgb(138, 138, 138);
+            box-shadow: 0px 0px 5px 0px rgba(0, 0, 0, 0.5);
+        }
+        nav > a {
+            text-decoration: none;
+            color: white;
+            padding: 3px;
+            font-weight: bold;
+            margin: 1px;
+        }
+        nav > a:hover {
+            text-decoration: underline;
+        }
+        footer {
+            background-color: black;
+            color: white;
+            text-align: center;
+            padding: 1px;
+            margin: 0px;
+        }
+        footer > p {
+            margin: 0px;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Meu site</h1>
+        <nav>
+            <a href="#">Link</a>
+            <a href="#">Link</a>
+            <a href="#">Link</a>
+            <a href="#">Link</a>
+            <a href="#">Link</a>
+        </nav>
+    </header>
+    <main>
+        <section id="assuntos">
+            <p>Esportes Politica Tecnologia</p>
+        </section>
+        <section id="noticias">
+            <article>
+                <h2>Noticia aleatoria</h2>
+                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Rerum pariatur distinctio ut perferendis beatae dicta earum, corporis aperiam nam illo animi dolore itaque inventore at quibusdam aspernatur! Sunt, aspernatur nesciunt.</p>
+                <aside>Artigo escrito por Ítalo</aside>
+            </article>
+        </section>
+    </main>
+    <footer>
+        <p>Desenvolvido por Ítalo Kauã</p>
+    </footer>
+</body>
+</html>
